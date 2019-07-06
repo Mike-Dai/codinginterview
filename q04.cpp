@@ -1,5 +1,6 @@
 /* 
  * my version 
+ * compare the right top corner of partial matrix to the number
  * cannot be compatible with 1 dimension array
  * need to consider invalid argument
  */
@@ -9,10 +10,10 @@ bool find(int** numbers, int row, int col, int num) {
 		if (numbers[i][j] = num) {
 			return true;
 		}
-		else if (numbers[i][j] > num) {
+		else if (numbers[i][j] > num) {  /* if bigger, eliminate this column */
 			j--;
 		}
-		else {
+		else {                           /* if smaller, eliminate this row */
 			i++;
 		}
 	}
@@ -21,6 +22,7 @@ bool find(int** numbers, int row, int col, int num) {
 
 /*
  * answer
+ * can also use the number in left bottom corner to compare 
  */
 bool Find(int* matrix, int row, int col, int number) {
 	bool found = false;
