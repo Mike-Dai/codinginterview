@@ -37,6 +37,9 @@ void PrintListReversingly_Iteratively(ListNode* pHead) {
 	}
 }
 
+/* 
+ * official answer 
+ */
 void PrintListReversingly_Iteratively(ListNode* pHead) {
 	std::stack<ListNode*> nodes;
 
