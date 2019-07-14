@@ -17,7 +17,7 @@ int Min(int* array, int length) {
 			middle = (low + high) / 2;
 		}
 	}
-	if (array[low] > array[middle]) {
+	(array[low] > array[middle]) {
 		return array[middle];
 	}
 	else if (array[middle] > array[high]) {

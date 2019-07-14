@@ -44,7 +44,7 @@ T CQueue::deleteHead() {
 			T& data = stack1.top();
 			stack1.pop();
 			stack2.push(data);
-		}
+		}3
 	}
 	if (stack2.size() == 0) {
 		throw new exception("Queue is empty");
